@@ -2,8 +2,8 @@
 
 setlocal enabledelayedexpansion
 
-%Input your FolderChangesView path in DIRFILE, and make sure FolderChangesView is not running while you running this .bat%
-%请在DIRFILE填入你的FolderChangesView配置文件路径 且请在FolderChangesView关闭时运行本脚本%
+@REM Input your FolderChangesView path in DIRFILE, and make sure FolderChangesView is not running while you running this .bat
+@REM 请在DIRFILE填入你的FolderChangesView配置文件路径 且请在FolderChangesView关闭时运行本脚本
 set DIRFILE=E:\folderchangesview\FolderChangesView.cfg
 
 set /a number=0
