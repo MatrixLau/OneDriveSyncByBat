@@ -1,13 +1,12 @@
 @echo off
-@REM 若OneDrive没有设置环境变量请手动设置OneDrive位置
-set ONEDRIVEPATH=C:\OneDrive
+
+set ONEDRIVEPATH=YOURONEDRIVEPATH
 set FILENAME=OneDriveSycn_process
 set FILETYPE=.txt
 @REM echo %ONEDRIVEPATH%
 
 if not exist %OneDrive% (
-    if exist %ONEDRIVEPATH% ( goto process )
-    else ( goto not_found_onedrive )
+    goto not_found_onedrive
 ) else (
     goto pre_process
 )
