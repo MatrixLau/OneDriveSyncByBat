@@ -1,4 +1,4 @@
-@echo off
+@REM @echo off
 
 set ONEDRIVEPATH=YOURONEDRIVEPATH
 set FILENAME=OneDriveSycn_process
@@ -29,7 +29,7 @@ if exist %ONEDRIVESYNCFILE% (
 )
 
 :create_file
-md %ONEDRIVESYNCFILE%
+echo "" > %ONEDRIVESYNCFILE%
 goto rename_file
 
 :check_file
