@@ -36,7 +36,7 @@ for %%a in ( %ONEDRIVEPATH%\* ) do (
     )
 )
 if !FINDFILECOUNT! == 0 (
-    echo "" > %ONEDRIVESYNCFILE%
+    echo "This an auto-create file while you are running OneDrieSync.bat" > %ONEDRIVESYNCFILE%
 )
 echo Syncing...
 goto :EOF
